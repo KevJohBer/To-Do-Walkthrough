@@ -35,7 +35,7 @@ DEBUG = True
 # else:
 #     ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
 
-ALLOWED_HOSTS = ['localhost', 'https://todo-kevin.herokuapp.com/']
+ALLOWED_HOSTS = ['localhost', 'todo-kevin.herokuapp.com']
 
 
 # Application definition
