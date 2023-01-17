@@ -35,7 +35,7 @@ DEBUG = True
 # else:
 #     ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
 
-ALLOWED_HOSTS = ['localhost', 'todo-kevin.herokuapp.com']
+ALLOWED_HOSTS = [os.environ.get('HEROKU_USERNAME')]
 
 
 # Application definition
@@ -97,7 +97,7 @@ WSGI_APPLICATION = 'django_todo.wsgi.application'
 #     }
 
 DATABASES = {
-         'default': dj_database_url.parse('postgres://vcvenakf:gATMhSQve9DaIheAVycak6AqOq_PcMhx@mel.db.elephantsql.com/vcvenakf')
+         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
      }
 
 
